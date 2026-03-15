@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (large datasets should not be committed)
+data/
+*.tgz
+*.tar.gz
+*.zip
+lfw*/
+pairsDevTrain.txt
+pairsDevTest.txt
+
+# Model checkpoints and outputs
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+lightning_logs/
+runs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
