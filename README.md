@@ -1,4 +1,4 @@
-# SiameseEye 👁️
+# SiameseEye
 
 A deep learning model for **face verification** using a Siamese Neural Network, trained and evaluated on the [Labeled Faces in the Wild (LFW)](http://vis-www.cs.umass.edu/lfw/) dataset.
 
@@ -51,19 +51,19 @@ pip install -r requirements.txt
 ### 2. Download the dataset
 Download the [LFW dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz) and extract it to a directory (e.g., `data/lfw2/`).
 
-The pair split files are downloaded automatically by the notebook.
+The pair split files are downloaded automatically.
 
-### 3. Run the notebook
+### 3. Run
 ```bash
-jupyter notebook siamese_eye.ipynb
+python siamese_eye.py
 ```
-Update the `data_directory` path in the notebook to point to your local LFW folder.
+Update `data_directory` in the script to point to your LFW folder.
 
 ---
 
 ## Training
 
-Built with **PyTorch Lightning** for clean, scalable training:
+Uses **PyTorch Lightning**:
 
 | Parameter | Value |
 |-----------|-------|
@@ -86,10 +86,10 @@ Model is evaluated on accuracy (threshold = 0.5 on sigmoid output) per epoch on 
 
 ```
 SiameseEye/
-├── siamese_eye.ipynb   # Main notebook (data loading, model, training)
-├── requirements.txt    # Python dependencies
-├── .gitignore          # Git ignore rules
-└── README.md           # This file
+├── siamese_eye.py
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
 ---
@@ -98,4 +98,4 @@ SiameseEye/
 
 - Koch, G., Zemel, R., & Salakhutdinov, R. (2015). *Siamese Neural Networks for One-Shot Image Recognition.* ICML Deep Learning Workshop.
 - [LFW Dataset](http://vis-www.cs.umass.edu/lfw/)
-- [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)
+- [Siamese Networks for One-Shot Image Recognition](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
